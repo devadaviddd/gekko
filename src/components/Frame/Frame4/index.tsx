@@ -143,7 +143,7 @@ export const Frame4 = () => {
         className="md:block hidden rounded-none"
       >
         {itemsLaptop.map((item) => (
-          <div key={item.id} className="w-full h-[102vh] ">
+          <div key={item.id} className="w-full h-[102dvh] ">
             <Image
               src={item.src}
               alt={item.alt}
@@ -167,7 +167,7 @@ export const Frame4 = () => {
     
       >
         {itemsMobile.map((item) => (
-          <div key={item.id} className="w-full h-[102vh]  ">
+          <div key={item.id} className="w-full h-[102dvh]  ">
             <Image
               src={item.src}
               alt={item.alt}

@@ -6,7 +6,7 @@ import rule from "../../../asset/rule.png";
 export const Frame7 = () => {
   return (
     <div
-      className="w-full h-[100vh] flex flex-col  
+      className="w-full h-[100dvh] flex flex-col  
     items-center relative z-10"
     >
       <div

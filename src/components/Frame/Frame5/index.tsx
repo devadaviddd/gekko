@@ -130,7 +130,7 @@ export const Frame5 = () => {
         className="md:block hidden"
       >
         {itemsLaptop.map((item) => (
-          <div key={item.id} className="w-full h-[102vh]  ">
+          <div key={item.id} className="w-full h-[102dvh]  ">
             <Image
               src={item.src}
               alt={item.alt}
@@ -151,10 +151,10 @@ export const Frame5 = () => {
         emulateTouch={false}
         swipeable={false}
         className="md:hidden block custom-border-frame5 bg-violet-100
-          w-full h-[102vh]"
+          w-full h-[102dvh]"
       >
         {itemsMobile.map((item) => (
-          <div key={item.id} className="w-full h-[102vh]  custom-border-frame5 bg-vGreen">
+          <div key={item.id} className="w-full h-[102dvh]  custom-border-frame5 bg-vGreen">
             <Image
               src={item.src}
               alt={item.alt}

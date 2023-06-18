@@ -9,7 +9,7 @@ export const Screen2And3 = () => {
   return (
     <>
       <div
-        className="w-full h-[200vh] absolute z-10 top-[94%] bg-no-repeat
+        className="w-full h-[200dvh] absolute z-10 top-[94%] bg-no-repeat
 bg-cover bg-center lg:block hidden  custom-border-frame1
 "
         style={{
@@ -32,7 +32,7 @@ bg-cover bg-center lg:block hidden  custom-border-frame1
         </div>
       </div>
       <div
-        className="w-full h-[200vh] absolute z-10 top-[93%] bg-no-repeat
+        className="w-full h-[200dvh] absolute z-10 top-[93%] bg-no-repeat
 bg-cover bg-center lg:hidden block custom-border
 "
         style={{

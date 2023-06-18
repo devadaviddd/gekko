@@ -5,7 +5,7 @@ import ring from "../../asset/ring.png";
 export const Screen1 = () => {
   return (
     <div
-      className="w-full h-[100vh] bg-purple-700  relative z-0 flex 
+      className="w-full h-[100dvh] bg-purple-700  relative z-0 flex 
     justify-center items-center  "
     >
       <div
