@@ -145,7 +145,7 @@ export const Frame5 = () => {
           renderArrowNext={renderArrowNext}
           showStatus={false}
           showIndicators={false}
-          emulateTouch={true}
+          emulateTouch={false}
           className="md:hidden block"
         >
           {itemsMobile.map((item) => (

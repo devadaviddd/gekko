@@ -225,7 +225,7 @@ export const Frame3 = () => {
             <h1 className="font-gmv-din-pro-medium text-2xl text-[#C9FF46]">
               //
             </h1>
-            <h1 className="font-gmv-din-pro-medium text-2xl">TIỂU SỬ</h1>
+            <h1 className="font-gmv-din-pro-medium lg:text-2xl text-xl">TIỂU SỬ</h1>
           </div>
           <p className="w-full flex h-full  font-gmv-din-pro-medium">
             Gã trai phố thị L.A. - là người dẫn đầu biệt đội toàn những sinh vật

@@ -5,6 +5,7 @@ import carousel3 from "../../../asset/carousel3.png";
 import carousel4 from "../../../asset/carousel4.png";
 import carousel5 from "../../../asset/carousel5.png";
 import carousel6 from "../../../asset/carousel6.png";
+
 import carouselMb1 from "../../../asset/mb-carousel1.png";
 import carouselMb2 from "../../../asset/mb-carousel2.png";
 import carouselMb3 from "../../../asset/mb-carousel3.png";
@@ -155,28 +156,28 @@ export const Frame4 = () => {
           </div>
         ))}
       </Carousel>
-        <Carousel
-          renderArrowPrev={renderArrowPrev}
-          renderArrowNext={renderArrowNext}
-          showStatus={false}
-          showIndicators={false}
-          emulateTouch={true}
-          className="md:hidden block"
-        >
-          {itemsMobile.map((item) => (
-            <div key={item.id} className="w-full h-[102vh] ">
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={768}
-                height={1365}
-                className="
+      <Carousel
+        renderArrowPrev={renderArrowPrev}
+        renderArrowNext={renderArrowNext}
+        showStatus={false}
+        showIndicators={false}
+        emulateTouch={false}
+        className="md:hidden block"
+      >
+        {itemsMobile.map((item) => (
+          <div key={item.id} className="w-full h-[102vh] ">
+            <Image
+              src={item.src}
+              alt={item.alt}
+              width={768}
+              height={1365}
+              className="
                 object-fill object-center w-full h-full
               "
-              />
-            </div>
-          ))}
-        </Carousel>
+            />
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };
