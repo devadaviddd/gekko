@@ -89,7 +89,7 @@ export const Frame3 = () => {
       className="lg:w-[60%] lg:h-[40%] flex lg:flex-row 
       flex-col-reverse 
     items-center justify-center w-full
-      max-lg:absolute bottom-0 h-1/2 "
+      max-lg:absolute bottom-0 h-[47%] "
     >
       {/* SKILL NAVIGATION */}
       <div
@@ -376,12 +376,12 @@ export const Frame3 = () => {
         >
           <div className="w-full h-[20%] flex gap-5 items-center ">
             <h1 className="font-gmv-din-pro-medium text-[#C9FF46]
-            lg:text-2xl md:text-xl  text-sm">
+            lg:text-2xl md:text-xl mt-2 text-sm">
               {skillName}
             </h1>
           </div>
           <p className="w-full h-full  font-gmv-din-pro-medium
-          lg:text-base text-sm">{skillInfor}</p>
+          lg:text-base sm:text-sm text-[0.7rem]">{skillInfor}</p>
         </div>
       </div>
     </div>
