@@ -33,7 +33,7 @@ bg-cover bg-center lg:block hidden  custom-border-frame1
         </div>
       </div>
       <div
-        className="w-full h-[200vh] absolute z-10 top-[94%] bg-no-repeat
+        className="w-full min-h-[200dvh] absolute z-10 top-[94%] bg-no-repeat
 bg-cover bg-center lg:hidden block custom-border
 "
         style={{
