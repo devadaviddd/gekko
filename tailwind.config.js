@@ -12,6 +12,79 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'gmv-din-pro-black-italic': [
+          'GMV_DIN_PRO-Black_Italic',
+          'sans-serif',
+        ],
+        'gmv-din-pro-black': ['GMV_DIN_PRO-Black', 'sans-serif'],
+        'gmv-din-pro-bold-italic': [
+          'GMV_DIN_PRO-Bold_Italic',
+          'sans-serif',
+        ],
+        'gmv-din-pro-exllight-italic': [
+          'GMV_DIN_PRO-Exllight_Italic',
+          'sans-serif',
+        ],
+        'gmv-din-pro-exlight': ['GMV_DIN_PRO-Exlight', 'sans-serif'],
+        'gmv-din-pro-italic': ['GMV_DIN_PRO-Italic', 'sans-serif'],
+        'gmv-din-pro-light-italic': [
+          'GMV_DIN_PRO-Light_Italic',
+          'sans-serif',
+        ],
+        'gmv-din-pro-light': ['GMV_DIN_PRO-Light', 'sans-serif'],
+        'gmv-din-pro-medium-italic': [
+          'GMV_DIN_PRO-Medium_Italic',
+          'sans-serif',
+        ],
+        'gmv-din-pro-medium': ['GMV_DIN_PRO-Medium', 'sans-serif'],
+        'gmv-din-pro-thin-italic': [
+          'GMV_DIN_PRO-Thin_Italic',
+          'sans-serif',
+        ],
+        'gmv-din-pro-thin': ['GMV_DIN_PRO-Thin', 'sans-serif'],
+        'gmv-din-pro': ['GMV_DIN_Pro', 'sans-serif'],
+        'gs3-druk-heavy-italic': [
+          'GS3_Druk_Heavy_Italic',
+          'GMV_DIN_PRO-Black_Italic',
+        ],
+        'gs3-druk-heavy': ['GS3_Druk_Heavy', 'sans-serif'],
+        'tungsten': ['Tungsten', 'GS3_Druk_Heavy'],
+        'myriad': ['MyriadPro-Regular', 'san-serif']
+      },
+
+      colors: {
+        'custom-gray': '#282828',
+      },
+      minWidth: {
+        150: '150px',
+      },
+      width: {
+        dWScreen: '100dvw',
+      },
+      height: {
+        dHScreen: '100dvh',
+      },
+      screens: {
+        navBreak: '1142px',
+        // list all pixel as a breakpoint from width = 1592 to 0
+
+        s1582: '1582px',
+        s1474: '1474px',
+        s1400: '1400px',
+        s1356: '1356px',
+        s1160: '1160px',
+        s1700: '1700px',
+        screen1ColumnBreak: '1100px',
+        screen2ColumnBreak: '1100px',
+        s940: '940px',
+        s647: '647px',
+        s475: '475px',
+        s420: '420px',
+        SE: '376px',
+        h809: '809px',
+        
+      },
     },
   },
   plugins: [],
