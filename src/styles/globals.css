@@ -137,10 +137,6 @@ img {
   user-drag: none;
 }
 
-html {
-  overflow: hidden;
-  width: 100%;
-}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -150,13 +146,6 @@ body {
     )
     rgb(var(--background-start-rgb));
 
-}
-
-main {
-  height: 100%;
-  position: fixed;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .trans-line {
