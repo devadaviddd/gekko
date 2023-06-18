@@ -145,6 +145,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+}
+main {
+  position: fixed; height: 100%;
 }
 
 .trans-line {

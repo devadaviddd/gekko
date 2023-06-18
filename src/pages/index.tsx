@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <main className="bg-white overflow-x-hidden">
       <Navbar />
-      <BoxNav/>
-      <Screen1/>
-      <div className="w-full h-[190dvh]"></div>
-      <Screen2And3/>
-      <Screen4/>
-      <Screen5/>
-      <Screen6And7/>
+      <BoxNav />
+      <Screen1 />
+      <div className="w-full h-[190vh]"></div>
+      <Screen2And3 />
+      <Screen4 />
+      <Screen5 />
+      <Screen6And7 />
     </main>
   );
 }

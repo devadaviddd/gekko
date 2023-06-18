@@ -130,7 +130,7 @@ export const Frame5 = () => {
         className="md:block hidden"
       >
         {itemsLaptop.map((item) => (
-          <div key={item.id} className="w-full h-[102dvh]  ">
+          <div key={item.id} className="w-full h-[102vh]  ">
             <Image
               src={item.src}
               alt={item.alt}
@@ -151,10 +151,13 @@ export const Frame5 = () => {
         emulateTouch={false}
         swipeable={false}
         className="md:hidden block custom-border-frame5 bg-violet-100
-          w-full h-[102dvh]"
+          w-full h-[102vh]"
       >
         {itemsMobile.map((item) => (
-          <div key={item.id} className="w-full h-[102dvh]  custom-border-frame5 bg-vGreen">
+          <div
+            key={item.id}
+            className="w-full h-[102vh]  custom-border-frame5 bg-vGreen"
+          >
             <Image
               src={item.src}
               alt={item.alt}
@@ -164,7 +167,7 @@ export const Frame5 = () => {
                 object-fill object-center w-full h-full
               "
             />
-           </div>
+          </div>
         ))}
       </Carousel>
     </div>

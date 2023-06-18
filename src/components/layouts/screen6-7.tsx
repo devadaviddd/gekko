@@ -6,7 +6,7 @@ import { Frame7 } from "../Frame/Frame7";
 export const Screen6And7 = () => {
   return (
     <>
-      <div className="w-full h-[200dvh] relative z-10">
+      <div className="w-full h-[200vh] relative z-10">
         <div
           className="w-full h-3/4 bg-no-repeat
         bg-cover bg-center  absolute top-0 bottom-0 left-0 right-0 -z-10

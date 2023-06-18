@@ -6,7 +6,7 @@ import rule from "../../../asset/rule.png";
 export const Frame7 = () => {
   return (
     <div
-      className="w-full h-[100dvh] flex flex-col  
+      className="w-full h-[100vh] flex flex-col  
     items-center relative z-10"
     >
       <div
@@ -72,8 +72,7 @@ export const Frame7 = () => {
           <div
             className="w-[25%] h-full bg-[#8C4AED]"
             style={{
-              clipPath:
-                "polygon(24.62% 0%, 100% 0%, 100% 102%, 0% 102%)",
+              clipPath: "polygon(24.62% 0%, 100% 0%, 100% 102%, 0% 102%)",
               // transform: "scaleX(-1)",
             }}
           ></div>
@@ -113,72 +112,72 @@ export const Frame7 = () => {
             © 2022 Riot games, Inc
           </h3>
           <div
-        className="flex flex-col items-center justify-start 
+            className="flex flex-col items-center justify-start 
       h-full gap-3 mt-1 mb-2 md:mt-12 lg:mt-2 md:gap-6 
       lg:gap-4 2xl:mt-12 2xl:gap-12"
-      >
-        <p
-          className="text-sm md:text-base text-center w-full 
+          >
+            <p
+              className="text-sm md:text-base text-center w-full 
         md:w-4/5 lg:w-[60%] px-4 lg:p-0 font-myriad leading-7 
         lg:text-lg text-white py-2"
-        >
-          Công Ty Cổ Phần VNG. Địa chỉ: Lô 03b-04-05-06-07, đường số
-          13, khu Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân
-          Thuận Đông, Quận 7, TP.HCM.
-        </p>
-        <div
-          className="flex flex-col items-center justify-center gap-2
+            >
+              Công Ty Cổ Phần VNG. Địa chỉ: Lô 03b-04-05-06-07, đường số 13, khu
+              Công Nghiệp, Khu Chế Xuất Tân Thuận, phường Tân Thuận Đông, Quận
+              7, TP.HCM.
+            </p>
+            <div
+              className="flex flex-col items-center justify-center gap-2
         mt-2 text-lg lg:mt-2 font-GMVDIN lg:flex-row lg:gap-20"
-        >
-          <a
-            href="https://www.riotgames.com/en/privacy-notice"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-bold text-white uppercase 
+            >
+              <a
+                href="https://www.riotgames.com/en/privacy-notice"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-bold text-white uppercase 
           lg:text-lg"
-          >
-            CHÍNH SÁCH BẢO MẬT
-          </a>
-          <a
-            href="https://www.riotgames.com/en/terms-of-service"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-bold text-white uppercase lg:text-lg"
-          >
-            ĐIỀU KHOẢN SỬ DỤNG (RIOT)
-          </a>
-          <a
-            href="https://valorant.zing.vn/dieu-khoan-su-dung.html"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-bold 
+              >
+                CHÍNH SÁCH BẢO MẬT
+              </a>
+              <a
+                href="https://www.riotgames.com/en/terms-of-service"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-bold text-white uppercase lg:text-lg"
+              >
+                ĐIỀU KHOẢN SỬ DỤNG (RIOT)
+              </a>
+              <a
+                href="https://valorant.zing.vn/dieu-khoan-su-dung.html"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-bold 
           text-white uppercase lg:text-lg"
-          >
-            ĐIỀU KHOẢN SỬ DỤNG (VNG)
-          </a>
-        </div>
-        <div
-          className="relative w-[30%] pt-[15%] lg:w-[200px] 
+              >
+                ĐIỀU KHOẢN SỬ DỤNG (VNG)
+              </a>
+            </div>
+            <div
+              className="relative w-[30%] pt-[15%] lg:w-[200px] 
             lg:pt-[10%] mx-auto mt-3 lg:mt-3 "
-          id="rule"
-        >
-          <Image
-            alt="rule"
-            loading="lazy"
-            decoding="async"
-            src={rule.src}
-            style={{
-              position: 'absolute',
-              height: '100%',
-              width: '100%',
-              inset: '0px',
-              color: 'transparent',
-            }}
-            width={430}
-            height={258}
-          />
-        </div>
-      </div>
+              id="rule"
+            >
+              <Image
+                alt="rule"
+                loading="lazy"
+                decoding="async"
+                src={rule.src}
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  inset: "0px",
+                  color: "transparent",
+                }}
+                width={430}
+                height={258}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
