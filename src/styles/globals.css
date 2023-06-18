@@ -149,6 +149,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+}
+
+main {
   height: 100%;
   position: fixed;
   overflow-y: scroll;
