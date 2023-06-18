@@ -146,6 +146,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+html {
+  overflow: hidden;
+  width: 100%;
+}
+main {
+  height: 100%;
+position: fixed;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+}
 
 .trans-line {
   background: linear-gradient(
