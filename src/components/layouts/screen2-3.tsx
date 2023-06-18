@@ -10,7 +10,7 @@ export const Screen2And3 = () => {
     <>
       <div
         className="w-full h-[200vh] absolute z-10 top-[94%] bg-no-repeat
-bg-cover bg-center lg:block hidden  
+bg-cover bg-center lg:block hidden  custom-border-frame1
 "
         style={{
           backgroundImage: `url(${screen2Bg.src})`,
@@ -20,7 +20,7 @@ bg-cover bg-center lg:block hidden
       >
         <div
           className="w-full h-full bg-no-repeat bg-cover 
-          bg-center relative "
+          bg-center relative custom-border-frame1"
           style={{
             backgroundImage: `url(${screen2And3Bg.src})`,
             backgroundSize: "100% 100%",

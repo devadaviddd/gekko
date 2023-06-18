@@ -140,7 +140,7 @@ export const Frame4 = () => {
         showStatus={false}
         showIndicators={false}
         emulateTouch={true}
-        className="md:block hidden"
+        className="md:block hidden rounded-none"
       >
         {itemsLaptop.map((item) => (
           <div key={item.id} className="w-full h-[102vh] ">

@@ -336,9 +336,9 @@ body {
 
 .custom-border-frame1 {
   border-radius: 0px 0px 125px 125px / 24px 24px 24px 24px;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.88);
-  -webkit-box-shadow: 0px 0px 285px 74px rgba(0,0,0,0.88);
-  -moz-box-shadow: 0px 0px 285px 74px rgba(0,0,0,0.88);
+  box-shadow: -5px 200px 224px -21px rgba(0, 0, 0, 0.425);
+  -webkit-box-shadow: -5px 200px 224px -21px rgba(0, 0, 0, 0.425);
+  -moz-box-shadow: -5px 200px 224px -21px rgba(0, 0, 0, 0.425);
 }
 .slider-wrapper {
   border-radius: 125px 125px 0px 0px / 24px 24px 24px 24px;
