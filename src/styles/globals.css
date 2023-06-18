@@ -136,10 +136,7 @@ img {
   -ms-user-drag: none;
   user-drag: none;
 }
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
-}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -148,9 +145,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    min-height: 100vh;
-    min-height: fill-available;
-    min-height: -webkit-fill-available;
 }
 
 .trans-line {
