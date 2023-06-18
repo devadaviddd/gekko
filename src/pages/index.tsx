@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <BoxNav />
       <Screen1 />
-      <div className="w-full h-[190vh]"></div>
+      <div className="w-full h-[190vh] bg-[#8c4aed]"></div>
       <Screen2And3 />
       <Screen4 />
       <Screen5 />
