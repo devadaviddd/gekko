@@ -217,17 +217,31 @@ export const Frame3 = () => {
               alt="lightning"
               width={40}
               height={40}
-              className=""
+              className="lg:w-[40px] w-[20px]"
             />
-            <h1 className="font-gmv-din-pro-medium text-2xl text-[#C9FF46]">
+            <h1
+              className="font-gmv-din-pro-medium lg:text-2xl 
+            sm:text-xl text-md
+            text-[#C9FF46]"
+            >
               GEKKO
             </h1>
-            <h1 className="font-gmv-din-pro-medium text-2xl text-[#C9FF46]">
+            <h1
+              className="font-gmv-din-pro-medium  lg:text-2xl 
+            sm:text-xl text-md text-[#C9FF46]"
+            >
               //
             </h1>
-            <h1 className="font-gmv-din-pro-medium lg:text-2xl text-xl">TIỂU SỬ</h1>
+            <h1
+              className="font-gmv-din-pro-medium lg:text-2xl 
+            sm:text-xl
+            text-md"
+            >
+              TIỂU SỬ
+            </h1>
           </div>
-          <p className="w-full flex h-full  font-gmv-din-pro-medium">
+          <p className="w-full flex h-full  font-gmv-din-pro-medium
+          lg:text-base text-sm">
             Gã trai phố thị L.A. - là người dẫn đầu biệt đội toàn những sinh vật
             "lắm chiêu" và rất thân thiết. Gekko đuổi theo những đồng đội đang
             mải miết lao tới hất tung tất cả kẻ thù đang ngáng đường, ráng sức
@@ -235,7 +249,9 @@ export const Frame3 = () => {
           </p>
         </div>
 
-        <div className="w-full h-[43%]  flex items-center justify-center mt-1 mb-1">
+        <div className="w-full sm:h-[43%] h-[20%]   flex items-center justify-center lg:mt-1 lg:mb-1
+        mt-5 mb-5
+        ">
           <video
             className="w-[80%] h-[100%] border-2 rounded-lg border-[#C9FF46] object-cover"
             controls={true}
@@ -245,11 +261,10 @@ export const Frame3 = () => {
           ></video>
         </div>
 
-        {/* BUTTON GROUP */}
+        {/* BUTTON GROUP MOBILE */}
         <div
           className="lg:hidden lg:h-full  flex lg:flex-col flex-row
-        items-center gap-2 h-[20%] "
-          id="skill-nav"
+        items-center gap-2 h-[10%]"
         >
           <button
             className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[75px] h-[75px]
@@ -360,11 +375,13 @@ export const Frame3 = () => {
         items-start gap-4"
         >
           <div className="w-full h-[20%] flex gap-5 items-center ">
-            <h1 className="font-gmv-din-pro-medium text-2xl text-[#C9FF46]">
+            <h1 className="font-gmv-din-pro-medium text-[#C9FF46]
+            lg:text-2xl md:text-xl  text-sm">
               {skillName}
             </h1>
           </div>
-          <p className="w-full h-full  font-gmv-din-pro-medium">{skillInfor}</p>
+          <p className="w-full h-full  font-gmv-din-pro-medium
+          lg:text-base text-sm">{skillInfor}</p>
         </div>
       </div>
     </div>

@@ -38,34 +38,34 @@ const itemsMobile: Item[] = [
   {
     id: 1,
     alt: "carousel1",
-    src: carouselMb1.src
+    src: carouselMb1.src,
   },
   {
     id: 2,
     alt: "carousel2",
-    src: carouselMb2.src
+    src: carouselMb2.src,
   },
   {
     id: 3,
     alt: "carousel3",
-    src: carouselMb3.src
+    src: carouselMb3.src,
   },
   {
     id: 4,
     alt: "carousel4",
-    src: carouselMb4.src
+    src: carouselMb4.src,
   },
   {
     id: 5,
     alt: "carousel5",
-    src: carouselMb5.src
+    src: carouselMb5.src,
   },
   // {
   //   id: 6,
   //   alt: "carousel6",
   //   src: carouselMb6.src
   // }
-]
+];
 export const Frame5 = () => {
   const renderArrowPrev = (
     clickHandler: () => void,
@@ -117,7 +117,10 @@ export const Frame5 = () => {
     );
   };
   return (
-    <div className="w-full h-full relative">
+    <div
+      className="w-full h-full relative custom-border-frame5
+    custom-box-shadow "
+    >
       <Carousel
         renderArrowPrev={renderArrowPrev}
         renderArrowNext={renderArrowNext}
@@ -127,41 +130,43 @@ export const Frame5 = () => {
         className="md:block hidden"
       >
         {itemsLaptop.map((item) => (
-          <div key={item.id} className="w-full h-[102vh] ">
+          <div key={item.id} className="w-full h-[102vh]  ">
             <Image
               src={item.src}
               alt={item.alt}
               width={2152}
               height={1049}
               className="
-              object-fill object-center w-full h-full
+              object-fill object-center w-full h-full 
             "
             />
           </div>
         ))}
       </Carousel>
       <Carousel
-          renderArrowPrev={renderArrowPrev}
-          renderArrowNext={renderArrowNext}
-          showStatus={false}
-          showIndicators={false}
-          emulateTouch={false}
-          className="md:hidden block"
-        >
-          {itemsMobile.map((item) => (
-            <div key={item.id} className="w-full h-[102vh] ">
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={768}
-                height={1365}
-                className="
+        renderArrowPrev={renderArrowPrev}
+        renderArrowNext={renderArrowNext}
+        showStatus={false}
+        showIndicators={false}
+        emulateTouch={false}
+        swipeable={false}
+        className="md:hidden block custom-border-frame5 bg-violet-100
+          w-full h-[102vh]"
+      >
+        {itemsMobile.map((item) => (
+          <div key={item.id} className="w-full h-[102vh]  custom-border-frame5 bg-vGreen">
+            <Image
+              src={item.src}
+              alt={item.alt}
+              width={768}
+              height={1365}
+              className="
                 object-fill object-center w-full h-full
               "
-              />
-            </div>
-          ))}
-        </Carousel>
+            />
+           </div>
+        ))}
+      </Carousel>
     </div>
   );
 };

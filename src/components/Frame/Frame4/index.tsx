@@ -133,7 +133,7 @@ export const Frame4 = () => {
   };
 
   return (
-    <div className="w-full h-full relative ">
+    <div className="w-full h-full relative  ">
       <Carousel
         renderArrowPrev={renderArrowPrev}
         renderArrowNext={renderArrowNext}
@@ -162,10 +162,12 @@ export const Frame4 = () => {
         showStatus={false}
         showIndicators={false}
         emulateTouch={false}
-        className="md:hidden block"
+        swipeable={false}
+        className="md:hidden block rounded-none " 
+    
       >
         {itemsMobile.map((item) => (
-          <div key={item.id} className="w-full h-[102vh] ">
+          <div key={item.id} className="w-full h-[102vh]  ">
             <Image
               src={item.src}
               alt={item.alt}
