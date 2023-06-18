@@ -12,27 +12,8 @@ import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  useEffect(() => {
-    const setHeight = () => {
-      const element = document.getElementById('my-element');
-      if (element) {
-        element.style.minHeight = window.innerHeight + 'px';
-      }
-    };
-
-    let deviceWidth = window.matchMedia('(max-width: 1024px)');
-
-    if (deviceWidth.matches) {
-      window.addEventListener('resize', setHeight);
-      setHeight();
-    }
-
-    return () => {
-      window.removeEventListener('resize', setHeight);
-    };
-  }, []);
   return (
-    <main className="bg-white overflow-x-hidden" id='my-element'>
+    <main className="bg-white overflow-x-hidden">
       <Navbar />
       <BoxNav />
       <Screen1 />
