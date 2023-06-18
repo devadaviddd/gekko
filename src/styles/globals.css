@@ -146,7 +146,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-html {
+/* html {
   overflow: hidden;
   width: 100%;
 }
@@ -155,7 +155,7 @@ main {
 position: fixed;
 overflow-y: scroll;
 -webkit-overflow-scrolling: touch;
-}
+} */
 
 .trans-line {
   background: linear-gradient(

@@ -7,25 +7,6 @@ import screen2And3Mb from "../../asset/mb-screen2-3-cut.png";
 import { useEffect } from "react";
 
 export const Screen2And3 = () => {
-  useEffect(() => {
-    const setHeight = () => {
-      const element = document.getElementById('my-element');
-      if (element) {
-        element.style.minHeight = window.innerHeight + 'px';
-      }
-    };
-
-    let deviceWidth = window.matchMedia('(max-width: 1024px)');
-
-    if (deviceWidth.matches) {
-      window.addEventListener('resize', setHeight);
-      setHeight();
-    }
-
-    return () => {
-      window.removeEventListener('resize', setHeight);
-    };
-  }, []);
   return (
     <>
       <div
