@@ -38,15 +38,15 @@ export const SocialMediaBox = (props: Props) => {
           >
             <path d={props.iconPath}></path>
           </svg>
-          <div className="group-hover:hidden block w-[3px] h-[3px] bg-[#8C4AED] absolute top-0 right-0"></div>
-          <div className="group-hover:hidden block w-[3px] h-[3px] bg-[#8C4AED] absolute bottom-0 left-0"></div>
+          <div className="-z-10  w-[3px] h-[3px] bg-[#8C4AED] absolute top-0 right-0"></div>
+          <div className="-z-10  block w-[3px] h-[3px] bg-[#8C4AED] absolute bottom-0 left-0"></div>
           <div
-            className="group-hover:hidden w-[30%] rotate-45 origin-left border-b-[1px] 
+            className="-z-10 w-[30%] rotate-45 origin-left border-b-[1px] 
       border-b-[#8C4AED] 
       border-solid absolute top-0 left-0"
           ></div>
           <div
-            className="group-hover:hidden w-[30%] rotate-45 origin-right border-b-[1px] 
+            className="-z-10 w-[30%] rotate-45 origin-right border-b-[1px] 
       border-b-[#8C4AED] 
       border-solid absolute bottom-0 right-0"
           ></div>
@@ -55,7 +55,7 @@ export const SocialMediaBox = (props: Props) => {
         <div
           className={`group flex relative flex-row 
           justify-center items-center 
-    w-[37px] h-[37px] border-white border-[1px] 
+    w-[40px] h-[40px] border-white border-[1px] bg-cover
           ${isHover ? 'hover-animation' : ''}`}
           onMouseEnter={() => {
             setHover(true);
@@ -77,19 +77,19 @@ export const SocialMediaBox = (props: Props) => {
             <path d={props.iconPath}></path>
           </svg>
           <div
-            className="group-hover:hidden block w-[3px] h-[3px] bg-white absolute 
+            className="-z-10 block w-[3px] h-[3px] bg-white absolute 
           top-0 right-0 hover:hidden"
           ></div>
-          <div className="group-hover:hidden block w-[3px] h-[3px] bg-white absolute bottom-0 left-0"></div>
+          <div className="-z-10 block w-[3px] h-[3px] bg-white absolute bottom-0 left-0"></div>
           <div
             className="w-[30%] rotate-45 origin-left border-b-[1px] 
       border-b-white 
-      border-solid absolute top-0 left-0 group-hover:hidden"
+      border-solid absolute top-0 left-0 -z-10"
           ></div>
           <div
             className="w-[30%] rotate-45 origin-right border-b-[1px] 
       border-b-white 
-      border-solid absolute bottom-0 right-0 group-hover:hidden"
+      border-solid absolute bottom-0 right-0 -z-10"
           ></div>
         </div>
       )}

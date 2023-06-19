@@ -15,8 +15,15 @@ export const FourCardsMobileView = () => {
         justify-center items-center
       "
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10px"
+          height="277px"
+          className=" "
+        >
           <path
+            className="origin-center scale-75 s385:translate-x-1
+            translate-x-[1px]"
             fill-rule="evenodd"
             fill="rgb(197, 244, 85)"
             d="M9.988,25
@@ -106,9 +113,9 @@ export const FourCardsMobileView = () => {
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px" >
           <path
-            className="rotate-180 origin-center"
+            className="rotate-180 origin-center scale-75 -translate-x-1"
             fill-rule="evenodd"
             fill="rgb(197, 244, 85)"
             d="M9.988,25
@@ -124,8 +131,15 @@ export const FourCardsMobileView = () => {
         justify-center items-center
       "
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10px"
+          height="277px"
+          className=""
+        >
           <path
+            className="origin-center scale-75 s385:translate-x-1
+            translate-x-[1px]"
             fill-rule="evenodd"
             fill="rgb(197, 244, 85)"
             d="M9.988,25
@@ -217,7 +231,7 @@ export const FourCardsMobileView = () => {
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px">
           <path
-            className="rotate-180 origin-center"
+            className="rotate-180 origin-center scale-75 -translate-x-1"
             fill-rule="evenodd"
             fill="rgb(197, 244, 85)"
             d="M9.988,25

@@ -15,26 +15,28 @@ export const FourCardsLaptopView = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16px"
-        height="425px"
-        className="xl:block hidden"
+        height="430px"
+        className="left-corner-card"
       >
         <path
           fill-rule="evenodd"
           fill="rgb(197, 244, 85)"
-          d="M15.735,0.466 L0.870,45.983 L0.870,353.452 L15.735,424.049 L15.735,0.466 Z"
-          className=""
+          d="M0.465,424.049 L15.329,378.532 L15.329,51.063 L0,0 L0,424.049 Z"
+          className="rotate-180 origin-center"
         />
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="10px"
         height="277px"
-        className="xl:hidden block"
+        className="hidden left-corner-smaller "
       >
         <path
           fill-rule="evenodd"
           fill="rgb(197, 244, 85)"
-          d="M9.988,0.345 L0.287,30.053 L0.287,230.732 L9.988,276.809 L9.988,0.345 Z"
+          d="M0.073,276.809 L9.774,247.101 L9.774,32.422 L0.073,0.345 L0.073,276.809 Z"
+          className="rotate-180 origin-center"
+
         />
       </svg>
       <div className="w-1/4 h-full bg-vGreen rounded-xl flex items-center justify-center">
@@ -44,7 +46,7 @@ export const FourCardsLaptopView = () => {
         >
           <div
             className="w-[98%] h-[98%] border border-[#C9FF46] rounded-md
-            flex flex-col justify-center items-center
+            flex flex-col justify-center items-center 
         "
           >
             <h1 className="font-tungsten xl:text-3xl text-2xl  ">GEKKO</h1>
@@ -73,7 +75,11 @@ export const FourCardsLaptopView = () => {
           </div>
         </div>
       </div>
-      <div className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen"></div>
+      <div
+        className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen
+        2xl:block hidden
+      "
+      ></div>
       <div className="w-1/4 h-full bg-vGreen rounded-xl flex items-center justify-center">
         <div
           className="w-[97%] h-[98%] bg-[#271649] rounded-md flex items-center justify-center
@@ -112,7 +118,11 @@ export const FourCardsLaptopView = () => {
           </div>
         </div>
       </div>
-      <div className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen"></div>
+      <div
+        className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen
+              2xl:block hidden
+              "
+      ></div>
       <div className="w-1/4 h-full bg-vGreen rounded-xl flex items-center justify-center">
         <div
           className="w-[97%] h-[98%] bg-[#271649] rounded-md flex items-center justify-center
@@ -123,9 +133,13 @@ export const FourCardsLaptopView = () => {
             flex flex-col justify-center items-center
         "
           >
-            <h1 className="font-tungsten xl:text-3xl text-2xl  ">BATTLEPASS MỚI</h1>
-            <h1 className="font-gmv-din-pro-medium text-[#C9FF46] 
-            xl:text-base text-sm xl:mb-6 mb-5">
+            <h1 className="font-tungsten xl:text-3xl text-2xl  ">
+              BATTLEPASS MỚI
+            </h1>
+            <h1
+              className="font-gmv-din-pro-medium text-[#C9FF46] 
+            xl:text-base text-sm xl:mb-6 mb-5"
+            >
               MAKE IT PERSONAL
             </h1>
             <Image
@@ -147,7 +161,9 @@ export const FourCardsLaptopView = () => {
           </div>
         </div>
       </div>
-      <div className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen"></div>
+      <div className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen
+              2xl:block hidden
+              "></div>
       <div className="w-1/4 h-full bg-vGreen rounded-xl flex items-center justify-center">
         <div
           className="w-[97%] h-[98%] bg-[#271649] rounded-md flex items-center justify-center
@@ -158,9 +174,13 @@ export const FourCardsLaptopView = () => {
             flex flex-col justify-center items-center
         "
           >
-            <h1 className="font-tungsten xl:text-3xl text-2xl  ">XẾP HẠNG MỚI</h1>
-            <h1 className="font-gmv-din-pro-medium text-[#C9FF46] 
-            xl:text-base text-sm xl:mb-6 mb-5">
+            <h1 className="font-tungsten xl:text-3xl text-2xl  ">
+              XẾP HẠNG MỚI
+            </h1>
+            <h1
+              className="font-gmv-din-pro-medium text-[#C9FF46] 
+            xl:text-base text-sm xl:mb-6 mb-5"
+            >
               PROVE YOURSELF
             </h1>
             <Image
@@ -186,24 +206,24 @@ export const FourCardsLaptopView = () => {
         xmlns="http://www.w3.org/2000/svg"
         width="16px"
         height="430px"
-        className="xl:block hidden"
+        className="right-corner-card"
       >
         <path
           fill-rule="evenodd"
           fill="rgb(197, 244, 85)"
-          d="M0.465,424.049 L15.329,378.532 L15.329,71.063 L0,0 L0,424.049 Z"
+          d="M0.465,424.049 L15.329,378.532 L15.329,51.063 L0,0 L0,424.049 Z"
         />
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="10px"
         height="277px"
-        className="xl:hidden block"
+        className="hidden right-corner-smaller "
       >
         <path
           fill-rule="evenodd"
           fill="rgb(197, 244, 85)"
-          d="M0.073,276.809 L9.774,247.101 L9.774,46.422 L0.073,0.345 L0.073,276.809 Z"
+          d="M0.073,276.809 L9.774,247.101 L9.774,32.422 L0.073,0.345 L0.073,276.809 Z"
         />
       </svg>
     </div>

@@ -6,7 +6,8 @@ export const BoxNav = () => {
   return (
     <div
       className="w-[170px] h-[258px]  fixed right-0
-      top-[10rem] z-20 bg-no-repeat bg-contain bg-center flex items-end md:visible invisible
+      top-[10rem] z-20 bg-no-repeat bg-contain bg-center flex items-end 
+      navBreak:visible invisible
     "
       style={{
         backgroundImage: `url(${boxImage.src})`,

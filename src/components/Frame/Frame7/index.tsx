@@ -63,9 +63,9 @@ export const Frame7 = () => {
           ></div>
           <h1
             className="w-[50%] h-full text-center flex 
-          items-center justify-center font-myriad text-3xl 
+          items-center justify-center font-myriad lg:text-3xl 
           underline tracking-wider
-          text-[#000]"
+          text-[#000]  md:text-2xl text-xl"
           >
             XEM THÊM TIN TỨC VỀ VALORANT
           </h1>

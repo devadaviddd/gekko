@@ -294,15 +294,47 @@ overflow-y: scroll;
   border-top-left-radius: 3px;
 }
 
-.hover-animation {
-  background: linear-gradient(45deg, #ff4655 50%, transparent 50%);
-  background-size: 200% 200%;
-  z-index: 10;
-  animation: placeholderShimmer 0.2s linear forwards;
+
+.hover-btn-animation {
+  background: linear-gradient(100deg, #8c4aed 50%, #C9FF46 50%);
+  background-size: 300% 200%;
+
+  animation: placeholderShimmer 0.5s linear forwards;
 }
 @keyframes placeholderShimmer {
   0% {
-    background-position: 100% 0;
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.hover-btn-animation-pb {
+  background: linear-gradient(100deg, #C9FF46 50%, #8c4aed 50%);
+  background-size: 300% 200%;
+
+  animation: placeholderShimmer 0.5s linear forwards;
+}
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.hover-animation {
+  background: linear-gradient(45deg, #ff4655 50%, transparent 50%);
+  background-size: 200% 200%;
+  animation: placeholderShimmer 0.2s linear forwards ;
+}
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 100% 0%;
   }
 
   100% {
@@ -313,8 +345,7 @@ overflow-y: scroll;
 .hover-animation-pb {
   background: linear-gradient(45deg, #fff 50%, transparent 50%);
   background-size: 200% 200%;
-  z-index: 10;
-  animation: placeholderShimmer 0.2s linear forwards;
+  animation: placeholderShimmer 0.2s linear forwards ;
 }
 @keyframes placeholderShimmer {
   0% {
@@ -357,3 +388,26 @@ overflow-y: scroll;
 .rounded-none .slider-wrapper {
   border-radius: 0px;
 }
+
+
+@media  screen and
+ (max-height: 843px)  {
+  .left-corner-card {
+    visibility: hidden;
+  }
+  .right-corner-card {
+    width: 0%;
+  }
+  .left-corner-smaller {
+    display: block;
+  }
+  .right-corner-smaller {
+    display: block;
+  }
+}
+
+.\!bg-vRed {
+  --tw-bg-opacity: 1!important;
+  background-color: rgb(255 70 85/var(--tw-bg-opacity))!important;
+}
+

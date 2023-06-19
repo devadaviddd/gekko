@@ -204,14 +204,15 @@ export const Frame3 = () => {
       {/* CONTENT */}
       <div
         className="w-[80%] h-full 
-        flex flex-col items-center "
+        flex flex-col items-center lg:gap-5"
         id="content"
       >
         <div
           className="w-[85%]   flex flex-col 
             gap-4 items-start"
         >
-          <div className="w-full h-3/4 flex  gap-5 items-end  ">
+          <div className="w-full h-3/4 flex  gap-5 items-end lg:justify-start 
+          justify-center ">
             <Image
               src={lightning.src}
               alt="lightning"
@@ -241,7 +242,7 @@ export const Frame3 = () => {
             </h1>
           </div>
           <p className="w-full flex h-full  font-gmv-din-pro-medium
-          lg:text-base text-sm">
+          xl:text-base lg:text-[0.8rem] s466:text-sm text-[0.7rem] lg:text-start text-center">
             Gã trai phố thị L.A. - là người dẫn đầu biệt đội toàn những sinh vật
             "lắm chiêu" và rất thân thiết. Gekko đuổi theo những đồng đội đang
             mải miết lao tới hất tung tất cả kẻ thù đang ngáng đường, ráng sức
@@ -249,7 +250,7 @@ export const Frame3 = () => {
           </p>
         </div>
 
-        <div className="w-full sm:h-[43%] h-[20%]   flex items-center justify-center lg:mt-1 lg:mb-1
+        <div className="lg:w-[85%]  w-full lg:h-[45%]  md:h-[40%] sm:h-[35%] h-[25%] flex items-center justify-center lg:mt-1 lg:mb-1
         mt-5 mb-5
         ">
           <video
@@ -267,7 +268,7 @@ export const Frame3 = () => {
         items-center gap-2 h-[10%]"
         >
           <button
-            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[75px] h-[75px]
+            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[60px] h-[60px]
           rounded-lg border-2 border-[#C9FF46] flex items-center justify-center
           hover:opacity-80 
         "
@@ -294,7 +295,7 @@ export const Frame3 = () => {
             )}
           </button>
           <button
-            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[75px] h-[75px]
+            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[60px] h-[60px]
           rounded-lg border-2 border-[#C9FF46] flex items-center justify-center
           hover:opacity-80 
         "
@@ -319,7 +320,7 @@ export const Frame3 = () => {
             )}
           </button>
           <button
-            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[75px] h-[75px]
+            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[60px] h-[60px]
           rounded-lg border-2 border-[#C9FF46] flex items-center justify-center
           hover:opacity-80 
         "
@@ -344,7 +345,7 @@ export const Frame3 = () => {
             )}
           </button>
           <button
-            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[75px] h-[75px]
+            className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[60px] h-[60px]
           rounded-lg border-2 border-[#C9FF46] flex items-center justify-center
           hover:opacity-80 
         "
@@ -371,17 +372,18 @@ export const Frame3 = () => {
         </div>
 
         <div
-          className="w-full h-1/4 flex flex-col 
-        items-start gap-4"
+          className="lg:w-full w-[85%] h-1/4 flex flex-col 
+        items-start gap-4 lg:text-start text-center"
         >
-          <div className="w-full h-[20%] flex gap-5 items-center ">
+          <div className="w-full h-[20%] flex gap-5 items-center lg:justify-start 
+          justify-center ">
             <h1 className="font-gmv-din-pro-medium text-[#C9FF46]
-            lg:text-2xl md:text-xl mt-2 text-sm">
+            lg:text-2xl md:text-xl mt-2 text-sm ">
               {skillName}
             </h1>
           </div>
           <p className="w-full h-full  font-gmv-din-pro-medium
-          lg:text-base sm:text-sm text-[0.7rem]">{skillInfor}</p>
+        xl:text-[1rem] lg:text-[0.8rem] s466:text-sm text-[0.7rem]">{skillInfor}</p>
         </div>
       </div>
     </div>

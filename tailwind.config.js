@@ -4,6 +4,9 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite-react/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./public/**/*.html",
   ],
   theme: {
     extend: {
@@ -69,10 +72,19 @@ module.exports = {
         s647: "647px",
         s475: "475px",
         s420: "420px",
+        s466: "466px",
         SE: "376px",
+        s385: "385px",
         h809: "809px",
+        s1473: "1473px",
+        s1406: "1406px",
+        s1288: "1288px",
+        s1148: "1148px",
+        navBreak: "1025px",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };

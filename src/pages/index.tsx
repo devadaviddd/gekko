@@ -5,6 +5,7 @@ import { Screen2And3 } from "@/components/layouts/screen2-3";
 import { Screen4 } from "@/components/layouts/screen4";
 import { Screen5 } from "@/components/layouts/screen5";
 import { Screen6And7 } from "@/components/layouts/screen6-7";
+import 'flowbite';
 
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
@@ -14,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   
   return (
-    <main  className="bg-white overflow-x-hidden">
+    <main  className="bg-white overflow-x-hidden ">
       <Navbar />
       <BoxNav />
       <Screen1 />
