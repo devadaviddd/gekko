@@ -44,8 +44,8 @@ export const MobileNav = (props: Props) => {
   return (
     <div
       id="mobNav"
-      className="fixed left-0 bottom-0 right-0 top-[76px] z-30 flex flex-col bg-black 
-      navBreak:invisible  "
+      className={`fixed left-0 bottom-0 right-0 top-[76px] z-30 flex flex-col bg-black 
+      navBreak:invisible` + (isOpen ? " flex" : " hidden")}
       ref={ref}
       style={{
         overflowY: "scroll",
