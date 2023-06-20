@@ -12,7 +12,9 @@ export const BoxNav = () => {
         backgroundImage: `url(${boxImage.src})`,
       }}
     >
-      <button className="w-[70%] h-1/2 absolute right-6 top-10" />
+      <a href="https://valorant.zing.vn/vi-vn/download/" target="_blank">
+        <button className="w-[70%] h-1/2 absolute right-6 top-10" />
+      </a>
       <div className="w-full h-[16%] ml-1 mb-10 flex justify-center gap-1">
         <a
           href="https://www.facebook.com/ValorantEsportsVietnam"
