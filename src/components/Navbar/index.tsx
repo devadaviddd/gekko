@@ -6,10 +6,10 @@ import { MobileNav } from "./mobile-view";
 export const Navbar = () => {
   const [isSocialOpen, setIsSocialOpen] = useState(false);
   const [isSupportOpen, setIsSupportOpen] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState<boolean|null>(null);
 
   return (
-    <nav className="w-full h-[78px] bg-black absolute top-0 z-20 ">
+    <nav className="w-full h-[78px] bg-black fixed top-0 z-20  ">
       <ul className="w-full h-full flex items-center ">
         <li>
           <a
@@ -98,7 +98,7 @@ export const Navbar = () => {
           </a>
           <div
             className="p-2 text-3xl text-white navBreak:hidden transition-all
-             bg-[#808080] bg-opacity-20 rounded-md z-20"
+            bg-[#808080] bg-opacity-20 rounded-md z-20"
             onClick={() => {
               setToggle(!toggle);
             }}

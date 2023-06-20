@@ -4,8 +4,8 @@ import { useIsomorphicLayoutEffect } from "@/hooks/useIsomorphicLayout";
 import { gsap } from "gsap";
 
 type Props = {
-  isOpen: boolean
-}
+  isOpen: boolean | null;
+};
 
 export const MobileNav = (props: Props) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -20,22 +20,25 @@ export const MobileNav = (props: Props) => {
     setIsMoreOpen,
   } = useNavContext();
 
-  const {isOpen} = props
+  const { isOpen } = props;
 
   useIsomorphicLayoutEffect(() => {
     let animation: any;
-    console.log(props.isOpen)
-    if (isOpen) {
+    console.log(props.isOpen);
+    if (isOpen === true) {
+      document.querySelector("#mobNav")?.classList.remove("invisible");
       animation = gsap.from("#mobNav", { x: 200, duration: 0.3 });
       document.body.style.overflowY = "hidden";
-
+    } else if (isOpen === false) {
+      animation = gsap.to("#mobNav", { x: 1000, duration: 0.5 });
     } else {
-      animation = gsap.to("#mobNav", { x:1000, duration: 0.5 });
-
     }
 
+
     return () => {
-      animation.revert();
+      if (animation) {
+        animation.revert();
+      }
       document.body.style.overflow = "scroll";
       document.body.style.overflowX = "hidden";
     };
@@ -45,7 +48,7 @@ export const MobileNav = (props: Props) => {
     <div
       id="mobNav"
       className={`fixed left-0 bottom-0 right-0 top-[76px] z-30 flex flex-col bg-black 
-      navBreak:invisible` + (isOpen ? " flex" : " hidden")}
+      navBreak:invisible invisible`}
       ref={ref}
       style={{
         overflowY: "scroll",
