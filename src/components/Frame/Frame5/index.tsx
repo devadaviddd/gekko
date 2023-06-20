@@ -118,6 +118,7 @@ export const Frame5 = () => {
   };
   return (
     <div
+      id='screen5'
       className="w-full h-full relative custom-border-frame5
     custom-box-shadow "
     >

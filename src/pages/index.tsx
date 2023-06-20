@@ -1,3 +1,4 @@
+
 import { BoxNav } from "@/components/Box-nav";
 import { Navbar } from "@/components/Navbar";
 import { Screen1 } from "@/components/layouts/screen1";
@@ -7,13 +8,14 @@ import { Screen5 } from "@/components/layouts/screen5";
 import { Screen6And7 } from "@/components/layouts/screen6-7";
 import 'flowbite';
 
+
 import { Inter } from "next/font/google";
 import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  
+
   return (
     <main  className="bg-white overflow-x-hidden ">
       <Navbar />

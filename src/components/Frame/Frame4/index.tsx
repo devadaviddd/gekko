@@ -133,7 +133,7 @@ export const Frame4 = () => {
   };
 
   return (
-    <div className="w-full h-full relative  ">
+    <div id='screen4' className="w-full h-full relative  ">
       <Carousel
         renderArrowPrev={renderArrowPrev}
         renderArrowNext={renderArrowNext}

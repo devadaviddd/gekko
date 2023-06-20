@@ -3,12 +3,13 @@ import oni from "../../asset/ONi.png";
 import battlepass from "../../asset/battlepass.png";
 import twoLady from "../../asset/2lady.png";
 import Image from "next/image";
+import * as Scroll from "react-scroll";
 
 export const FourCardsLaptopView = () => {
   return (
     <div
       className="xl:w-[90%]   h-[50%] lg:flex flex-row  
-      mt-5 justify-center items-center relative hidden
+      mt-5 justify-center items-center relative hidden transition-all
     "
     >
       {/* bg-[#271649] */}
@@ -36,7 +37,6 @@ export const FourCardsLaptopView = () => {
           fill="rgb(197, 244, 85)"
           d="M0.073,276.809 L9.774,247.101 L9.774,32.422 L0.073,0.345 L0.073,276.809 Z"
           className="rotate-180 origin-center"
-
         />
       </svg>
       <div className="w-1/4 h-full bg-vGreen rounded-xl flex items-center justify-center">
@@ -63,15 +63,17 @@ export const FourCardsLaptopView = () => {
               height={787}
               className="h-1/2"
             />
-            <button
-              className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
+            <Scroll.Link to={"screen3"} smooth={true} offset={-150}>
+              <button
+                className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
               pt-2 pb-2 xl:pl-4 xl:pr-4 pl-2 pr-2
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-7 text-xs xl:text-base "
-            >
-              TÌM HIỂU NGAY
-            </button>
+            mt-7 text-xs xl:text-base hover:opacity-75"
+              >
+                TÌM HIỂU NGAY
+              </button>
+            </Scroll.Link>
           </div>
         </div>
       </div>
@@ -101,20 +103,22 @@ export const FourCardsLaptopView = () => {
             </h1>
             <Image
               src={oni.src}
-              alt="gekko"
+              alt="oni"
               width={1399}
               height={787}
               className="h-1/2"
             />
-            <button
-              className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
+            <Scroll.Link to="screen4" smooth={true}>
+              <button
+                className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
               pt-2 pb-2 xl:pl-4 xl:pr-4 pl-2 pr-2
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-7 text-xs xl:text-base "
-            >
-              TÌM HIỂU NGAY
-            </button>
+            mt-7 text-xs xl:text-base hover:opacity-75"
+              >
+                TÌM HIỂU NGAY
+              </button>
+            </Scroll.Link>
           </div>
         </div>
       </div>
@@ -149,21 +153,25 @@ export const FourCardsLaptopView = () => {
               height={787}
               className="h-1/2"
             />
-            <button
-              className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
+            <Scroll.Link to="screen5" smooth={true}>
+              <button
+                className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
               pt-2 pb-2 xl:pl-4 xl:pr-4 pl-2 pr-2
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-7 text-xs xl:text-base "
-            >
-              TÌM HIỂU NGAY
-            </button>
+            mt-7 text-xs xl:text-base hover:opacity-75"
+              >
+                TÌM HIỂU NGAY
+              </button>
+            </Scroll.Link>
           </div>
         </div>
       </div>
-      <div className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen
+      <div
+        className="xl:w-[10px] xl:h-[311px] w-[5px] h-[200px]  bg-vGreen
               2xl:block hidden
-              "></div>
+              "
+      ></div>
       <div className="w-1/4 h-full bg-vGreen rounded-xl flex items-center justify-center">
         <div
           className="w-[97%] h-[98%] bg-[#271649] rounded-md flex items-center justify-center
@@ -185,20 +193,22 @@ export const FourCardsLaptopView = () => {
             </h1>
             <Image
               src={twoLady.src}
-              alt="gekko"
+              alt="two-lady"
               width={1399}
               height={787}
               className="h-1/2"
             />
-            <button
-              className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
+            <a href="https://valorant.zing.vn/vi-vn/news/" target="_blank">
+              <button
+                className="xl:w-[10rem] w-[7rem]  xl:h-[3rem] h-[2.5rem]  
               pt-2 pb-2 xl:pl-4 xl:pr-4 pl-2 pr-2
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-7 text-xs xl:text-base "
-            >
-              TÌM HIỂU NGAY
-            </button>
+            mt-7 text-xs xl:text-base hover:opacity-75"
+              >
+                TÌM HIỂU NGAY
+              </button>
+            </a>
           </div>
         </div>
       </div>

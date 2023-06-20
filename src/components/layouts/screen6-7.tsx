@@ -10,7 +10,7 @@ export const Screen6And7 = () => {
         <div
           className="w-full h-3/4 bg-no-repeat
         bg-cover bg-center  absolute top-0 bottom-0 left-0 right-0 -z-10
-        lg:block hidden"
+        lg:block hidden transition-all"
           style={{
             backgroundImage: `url(${screen6Bg.src})`,
           }}
@@ -18,7 +18,7 @@ export const Screen6And7 = () => {
         <div
           className="w-full h-3/4 bg-no-repeat
         bg-cover bg-top absolute top-0 bottom-0 left-0 right-0 -z-10
-        lg:hidden block"
+        lg:hidden block transition-all"
           style={{
             backgroundImage: `url(${mbScreen6Bg.src})`,
           }}

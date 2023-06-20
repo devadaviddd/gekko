@@ -121,6 +121,17 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #8C4AED;
+}
+
+
 img {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -328,7 +339,7 @@ overflow-y: scroll;
 }
 
 .hover-animation {
-  background: linear-gradient(45deg, #ff4655 50%, transparent 50%);
+  background: linear-gradient(45deg, #8c4aed 50%, transparent 50%);
   background-size: 200% 200%;
   animation: placeholderShimmer 0.2s linear forwards ;
 }
@@ -411,3 +422,13 @@ overflow-y: scroll;
   background-color: rgb(255 70 85/var(--tw-bg-opacity))!important;
 }
 
+.text-vGreen {
+  --tw-text-opacity: 1;
+  color: rgb(201 255 70/var(--tw-text-opacity));
+}
+
+
+.border-vGreen {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 255 70/var(--tw-border-opacity));
+}

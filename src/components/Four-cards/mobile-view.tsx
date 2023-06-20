@@ -3,12 +3,13 @@ import oni from "../../asset/ONi.png";
 import battlepass from "../../asset/battlepass.png";
 import twoLady from "../../asset/2lady.png";
 import Image from "next/image";
+import * as Scroll from "react-scroll";
 
 export const FourCardsMobileView = () => {
   return (
     <div
       className="w-full sm:h-1/2 h-1/2 lg:hidden grid 
-    grid-rows-2 grid-cols-1"
+    grid-rows-2 grid-cols-1 transition-all"
     >
       <div
         className="flex flex-row w-full h-full
@@ -61,15 +62,17 @@ export const FourCardsMobileView = () => {
                 height={787}
                 className="h-1/2"
               />
-              <button
-                className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
+              <Scroll.Link to={"screen3"} smooth={true} offset={600}>
+                <button
+                  className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
               
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-0 text-xs xl:text-base "
-              >
-                TÌM HIỂU NGAY
-              </button>
+            mt-0 text-xs xl:text-base hover:opacity-75"
+                >
+                  TÌM HIỂU NGAY
+                </button>
+              </Scroll.Link>
             </div>
           </div>
         </div>
@@ -87,33 +90,37 @@ export const FourCardsMobileView = () => {
             flex flex-col justify-center items-center
         "
             >
-              <h1 className="font-tungsten xl:text-3xl text-2xl   ">GEKKO</h1>
+              <h1 className="font-tungsten xl:text-3xl text-2xl">
+                ONI TRỞ LẠI
+              </h1>
               <h1
                 className="font-gmv-din-pro-medium text-[#C9FF46] 
             xl:text-base text-sm xl:mb-6 mb-2 "
               >
-                ĐẶC VỤ MỚI
+                EMBRACE YOUR DEMONS
               </h1>
               <Image
-                src={gekko.src}
-                alt="gekko"
+                src={oni.src}
+                alt="oni"
                 width={1399}
                 height={787}
                 className="h-1/2"
               />
-              <button
-                className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
+              <Scroll.Link to="screen4" smooth={true}>
+                <button
+                  className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
               
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-0 text-xs xl:text-base "
-              >
-                TÌM HIỂU NGAY
-              </button>
+            mt-0 text-xs xl:text-base hover:opacity-75 "
+                >
+                  TÌM HIỂU NGAY
+                </button>
+              </Scroll.Link>
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="277px">
           <path
             className="rotate-180 origin-center scale-75 -translate-x-1"
             fill-rule="evenodd"
@@ -163,29 +170,34 @@ export const FourCardsMobileView = () => {
             flex flex-col justify-center items-center
         "
             >
-              <h1 className="font-tungsten xl:text-3xl text-2xl   ">GEKKO</h1>
+              <h1 className="font-tungsten xl:text-3xl text-2xl   ">
+                {" "}
+                BATTLEPASS MỚI
+              </h1>
               <h1
                 className="font-gmv-din-pro-medium text-[#C9FF46] 
             xl:text-base text-sm xl:mb-6 mb-2 "
               >
-                ĐẶC VỤ MỚI
+                MAKE IT PERSONAL
               </h1>
               <Image
-                src={gekko.src}
-                alt="gekko"
+                src={battlepass.src}
+                alt="battlepass"
                 width={1399}
                 height={787}
                 className="h-1/2"
               />
-              <button
-                className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
+              <Scroll.Link to="screen5" smooth={true}>
+                <button
+                  className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
               
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-0 text-xs xl:text-base "
-              >
-                TÌM HIỂU NGAY
-              </button>
+            mt-0 text-xs xl:text-base hover:opacity-75"
+                >
+                  TÌM HIỂU NGAY
+                </button>
+              </Scroll.Link>
             </div>
           </div>
         </div>
@@ -203,29 +215,34 @@ export const FourCardsMobileView = () => {
             flex flex-col justify-center items-center
         "
             >
-              <h1 className="font-tungsten xl:text-3xl text-2xl   ">GEKKO</h1>
+              <h1 className="font-tungsten xl:text-3xl text-2xl   ">
+                {" "}
+                XẾP HẠNG MỚI
+              </h1>
               <h1
                 className="font-gmv-din-pro-medium text-[#C9FF46] 
             xl:text-base text-sm xl:mb-6 mb-2 "
               >
-                ĐẶC VỤ MỚI
+                PROVE YOURSELF
               </h1>
               <Image
-                src={gekko.src}
-                alt="gekko"
+                src={twoLady.src}
+                alt="two-lady"
                 width={1399}
                 height={787}
                 className="h-1/2"
               />
-              <button
-                className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
+              <a href="https://valorant.zing.vn/vi-vn/news/" target="_blank">
+                <button
+                  className="xl:w-[10rem] w-[6rem]  xl:h-[3rem] h-[2rem] mt-2 
               
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
             mt-0 text-xs xl:text-base "
-              >
-                TÌM HIỂU NGAY
-              </button>
+                >
+                  TÌM HIỂU NGAY
+                </button>
+              </a>
             </div>
           </div>
         </div>

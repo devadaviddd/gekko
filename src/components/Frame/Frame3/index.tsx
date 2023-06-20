@@ -86,16 +86,17 @@ export const Frame3 = () => {
   }, [skillSelected]);
   return (
     <div
+      id='screen3'
       className="lg:w-[60%] lg:h-[40%] flex lg:flex-row 
       flex-col-reverse 
     items-center justify-center w-full
-      max-lg:absolute bottom-0 h-[47%] "
+      max-lg:absolute bottom-0 h-[47%]"
     >
       {/* SKILL NAVIGATION */}
       <div
         className="lg:w-[20%] lg:h-full  lg:flex lg:flex-col flex-row
         items-center gap-2 hidden "
-        id="skill-nav"
+        id="skill-nav transition-all"
       >
         <button
           className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[75px] h-[75px]
@@ -212,7 +213,7 @@ export const Frame3 = () => {
             gap-4 items-start"
         >
           <div className="w-full h-3/4 flex  gap-5 items-end lg:justify-start 
-          justify-center ">
+          justify-center transition-all">
             <Image
               src={lightning.src}
               alt="lightning"
@@ -222,27 +223,28 @@ export const Frame3 = () => {
             />
             <h1
               className="font-gmv-din-pro-medium lg:text-2xl 
-            sm:text-xl text-md
+            sm:text-xl text-md transition-all
             text-[#C9FF46]"
             >
               GEKKO
             </h1>
             <h1
               className="font-gmv-din-pro-medium  lg:text-2xl 
-            sm:text-xl text-md text-[#C9FF46]"
+            sm:text-xl text-md text-[#C9FF46] transition-all"
             >
               //
             </h1>
             <h1
               className="font-gmv-din-pro-medium lg:text-2xl 
             sm:text-xl
-            text-md"
+            text-md transition-all"
             >
               TIỂU SỬ
             </h1>
           </div>
           <p className="w-full flex h-full  font-gmv-din-pro-medium
-          xl:text-base lg:text-[0.8rem] s466:text-sm text-[0.7rem] lg:text-start text-center">
+          xl:text-base lg:text-[0.8rem] s466:text-sm text-[0.7rem] lg:text-start text-center
+          transition-all">
             Gã trai phố thị L.A. - là người dẫn đầu biệt đội toàn những sinh vật
             "lắm chiêu" và rất thân thiết. Gekko đuổi theo những đồng đội đang
             mải miết lao tới hất tung tất cả kẻ thù đang ngáng đường, ráng sức
@@ -254,7 +256,8 @@ export const Frame3 = () => {
         mt-5 mb-5
         ">
           <video
-            className="w-[80%] h-[100%] border-2 rounded-lg border-[#C9FF46] object-cover"
+            className="w-[80%] h-[100%] border-2 rounded-lg border-[#C9FF46] object-cover
+            transition-all"
             controls={true}
             autoPlay
             muted
@@ -265,7 +268,7 @@ export const Frame3 = () => {
         {/* BUTTON GROUP MOBILE */}
         <div
           className="lg:hidden lg:h-full  flex lg:flex-col flex-row
-        items-center gap-2 h-[10%]"
+        items-center gap-2 h-[10%] transition-all"
         >
           <button
             className="lg:w-[120px] lg:h-[120px] bg-[#7A44E6] w-[60px] h-[60px]
@@ -378,11 +381,11 @@ export const Frame3 = () => {
           <div className="w-full h-[20%] flex gap-5 items-center lg:justify-start 
           justify-center ">
             <h1 className="font-gmv-din-pro-medium text-[#C9FF46]
-            lg:text-2xl md:text-xl mt-2 text-sm ">
+            lg:text-2xl md:text-xl mt-2 text-sm transition-all">
               {skillName}
             </h1>
           </div>
-          <p className="w-full h-full  font-gmv-din-pro-medium
+          <p className="w-full h-full  font-gmv-din-pro-medium transition-all
         xl:text-[1rem] lg:text-[0.8rem] s466:text-sm text-[0.7rem]">{skillInfor}</p>
         </div>
       </div>

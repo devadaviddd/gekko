@@ -3,6 +3,9 @@ import { useState } from "react";
 export const LaptopViewNav = () => {
   const [isSocialOpen, setIsSocialOpen] = useState(false);
   const [isSupportOpen, setIsSupportOpen] = useState(false);
+
+
+
   return (
     <div
       className="w-full h-full  navBreak:flex items-center ml-[1rem]
@@ -14,6 +17,9 @@ export const LaptopViewNav = () => {
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all 
           hover:bg-[#808080] hover:bg-opacity-20 rounded-md
+          hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0
           
           "
         id="dropdownHoverButton"
@@ -74,39 +80,61 @@ export const LaptopViewNav = () => {
         </div>
       </li>
 
-      <li
-        className="
+      <a href="https://playvalorant.com/vi-vn/media/">
+        <li
+          className="
           cursor-pointer text-sm group flex items-center 
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all 
-          hover:bg-[#808080] hover:bg-opacity-20 rounded-md"
-      >
-        <span>TRUYỀN THÔNG</span>
-      </li>
-      <li
-        className="
+          hover:bg-[#808080] hover:bg-opacity-20 rounded-md
+          hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0
+          "
+        >
+          <span>TRUYỀN THÔNG</span>
+        </li>
+      </a>
+
+      <a href="https://playvalorant.com/vi-vn/news/">
+        <li
+          className="
           cursor-pointer text-sm group flex items-center 
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all 
-          hover:bg-[#808080] hover:bg-opacity-20 rounded-md"
-      >
-        <span>TIN TỨC</span>
-      </li>
-      <li
-        className="
-          cursor-pointer text-sm group flex items-center 
+          hover:bg-[#808080] hover:bg-opacity-20 rounded-md
+          hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0"
+        >
+          <span>TIN TỨC</span>
+        </li>
+      </a>
+
+      <a href="https://playvalorant.com/vi-vn/leaderboards/">
+        <li
+          className="
+          cursor-pointer text-sm group s1043:flex items-center 
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all 
-          hover:bg-[#808080] hover:bg-opacity-20 rounded-md"
-      >
-        <span>BẢNG XẾP HẠNG</span>
-      </li>
+          hover:bg-[#808080] hover:bg-opacity-20 rounded-md
+          hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0 hidden"
+        >
+          <span>BẢNG XẾP HẠNG</span>
+        </li>
+      </a>
+
       <li
         className="
           cursor-pointer text-sm group s1148:flex items-center 
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all  hidden
-          hover:bg-[#808080] hover:bg-opacity-20 rounded-md "
+          hover:bg-[#808080] hover:bg-opacity-20 rounded-md
+          hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0 "
         id="dropdownHoverButton"
         data-dropdown-toggle="dropdownHover2"
         data-dropdown-trigger="hover"
@@ -190,7 +218,9 @@ export const LaptopViewNav = () => {
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all 
           hover:bg-[#808080] hover:bg-opacity-20 rounded-md
-          hidden
+          hidden hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0
           "
         id="dropdownHoverButton"
         data-dropdown-toggle="dropdownHover3"
@@ -298,27 +328,37 @@ export const LaptopViewNav = () => {
           </ul>
         </div>
       </li>
-      <li
-        className="
+      <a href="https://valorant.zing.vn/vi-vn/gocnewbie/">
+        <li
+          className="
                 cursor-pointer text-sm group s1406:flex items-center 
                 gap-1 font-semibold text-center text-[#f9f9f9]
                 relative uppercase px-3 py-2 transition-all 
                 hover:bg-[#808080] hover:bg-opacity-20 rounded-md
-                hidden"
-      >
-        <span>GÓC NEWBIE</span>
-      </li>
-      <li
-        className="
+                hidden hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+                hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+                hover:before:left-0"
+        >
+          <span>GÓC NEWBIE</span>
+        </li>
+      </a>
+
+      <a href="https://valorant.zing.vn/vi-vn/news/">
+        <li
+          className="
           cursor-pointer text-sm group s1473:flex items-center 
           gap-1 font-semibold text-center text-[#f9f9f9]
           relative uppercase px-3 py-2 transition-all 
           hover:bg-[#808080] hover:bg-opacity-20 rounded-md
-          hidden
+          hidden hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0
           "
-      >
-        <span>SỰ KIỆN</span>
-      </li>
+        >
+          <span>SỰ KIỆN</span>
+        </li>
+      </a>
+
       <li
         className="
           cursor-pointer text-sm group   flex items-center 
@@ -326,32 +366,38 @@ export const LaptopViewNav = () => {
           relative uppercase  transition-all 
           "
       >
-        <div
-          className="w-full h-full flex gap-1  px-3 py-2 hover:bg-[#808080] hover:bg-opacity-20 rounded-md"
-          id="multiLevelDropdownButton"
-          data-dropdown-toggle="dropdownHover4"
-          data-dropdown-trigger="hover"
-          data-dropdown-delay="100"
-          data-dropdown-offset-skidding="30"
-        >
-          THÊM
-          <button
-            className="brightness-50 group-hover:brightness-100
-          s1473:hidden block"
+        <a href="https://valorant.zing.vn/vi-vn/news/">
+          <div
+            className="w-full h-full flex gap-1  px-3 py-2 hover:bg-[#808080] 
+          hover:bg-opacity-20 rounded-md
+          hover:before:content-['']  hover:before:bg-[#ff4655] hover:before:absolute
+          hover:before:w-full hover:before:h-[2px] hover:before:bottom-[-1.3rem] 
+          hover:before:left-0"
+            id="multiLevelDropdownButton"
+            data-dropdown-toggle="dropdownHover4"
+            data-dropdown-trigger="hover"
+            data-dropdown-delay="100"
+            data-dropdown-offset-skidding="30"
           >
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 12 16"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
+            THÊM
+            <button
+              className="brightness-50 group-hover:brightness-100
+          s1473:hidden block"
             >
-              <path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"></path>
-            </svg>
-          </button>
-        </div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 12 16"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"></path>
+              </svg>
+            </button>
+          </div>
+        </a>
 
         <div
           id="dropdownHover4"
@@ -593,6 +639,19 @@ export const LaptopViewNav = () => {
                 </li>
               </>
             )}
+
+            <a href="https://playvalorant.com/vi-vn/leaderboards/">
+              <li
+                className="
+          cursor-pointer text-sm group s1043:hidden items-center 
+          gap-1 font-semibold text-center text-[#f9f9f9]
+          relative uppercase px-3 py-2 transition-all 
+          hover:bg-[#808080] hover:bg-opacity-20 rounded-md
+           flex"
+              >
+                <span>BẢNG XẾP HẠNG</span>
+              </li>
+            </a>
           </ul>
         </div>
       </li>

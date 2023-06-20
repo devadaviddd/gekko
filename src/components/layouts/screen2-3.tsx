@@ -11,7 +11,7 @@ export const Screen2And3 = () => {
     <>
       <div
         className="w-full h-[200vh] absolute z-10 top-[94%] bg-no-repeat
-bg-cover bg-center lg:block hidden  custom-border-frame1 
+bg-cover bg-center lg:block hidden  custom-border-frame1 transition-all
 "       id='my-element'
         style={{
           backgroundImage: `url(${screen2Bg.src})`,
@@ -21,7 +21,7 @@ bg-cover bg-center lg:block hidden  custom-border-frame1
       >
         <div
           className="w-full h-full bg-no-repeat bg-cover 
-          bg-center relative custom-border-frame1" 
+          bg-center relative custom-border-frame1 transition-all" 
           style={{
             backgroundImage: `url(${screen2And3Bg.src})`,
             backgroundSize: "101% 100%",
@@ -34,7 +34,7 @@ bg-cover bg-center lg:block hidden  custom-border-frame1
       </div>
       <div
         className="w-full h-[200vh] absolute z-10 top-[94%] bg-no-repeat
-bg-cover bg-center lg:hidden block custom-border 
+bg-cover bg-center lg:hidden block custom-border transition-all
 "
         style={{
           backgroundImage: `url(${screen2And3Mb.src})`,

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import boxImage from "../../asset/nav-box.png";
 import { SocialMediaBox } from "../Social-media-box";
 
@@ -14,12 +13,6 @@ export const BoxNav = () => {
       }}
     >
       <button className="w-[70%] h-1/2 absolute right-6 top-10" />
-      {/* <Image
-        src={boxImage.src}
-        alt="box-nav"
-        width={214}
-        height={258}
-      /> */}
       <div className="w-full h-[16%] ml-1 mb-10 flex justify-center gap-1">
         <a
           href="https://www.facebook.com/ValorantEsportsVietnam"

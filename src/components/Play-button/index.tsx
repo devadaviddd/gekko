@@ -19,61 +19,62 @@ export const PlayButton = (props: Props) => {
       items-center
       "
         >
-          <button
-            className={`bg-[#C9FF46] pl-8 pr-8 pt-3 pb-3 relative 
-          play-button min-w-[230px] md:h-[50px] group
+          <a href="https://valorant.zing.vn/vi-vn/download/" target="_blank">
+            <button
+              className={`bg-[#C9FF46] pl-8 pr-8 pt-3 pb-3 relative 
+          play-button min-w-[230px] md:h-[50px] group transition-all
           ${isHover ? "hover-btn-animation" : ""}`}
-            onMouseEnter={() => {
-              setHover(true);
-            }}
-            onMouseLeave={(element) => {
-              element.currentTarget.classList.remove("hover-animation-pb");
-              setHover(false);
-            }}
-          >
-            <h1
-              className="font-gmv-din-pro-medium font-bold 
-          text-black text-xl button-text relative group-hover:text-[#C9FF46]"
+              onMouseEnter={() => {
+                setHover(true);
+              }}
+              onMouseLeave={(element) => {
+                element.currentTarget.classList.remove("hover-animation-pb");
+                setHover(false);
+              }}
             >
-              {props.text ? props.text : "KHÁM PHÁ NGAY"}
-            </h1>
+              <h1
+                className="font-gmv-din-pro-medium font-bold 
+          text-black text-xl button-text relative group-hover:text-[#C9FF46]"
+              >
+                {props.text ? props.text : "KHÁM PHÁ NGAY"}
+              </h1>
 
-            <div
-              id="top-left-line"
-              className="trans-line absolute left-0 
+              <div
+                id="top-left-line"
+                className="trans-line absolute left-0 
         -translate-x-[120%] top-[15%] 
         block mx-auto 
         lg:w-[230px] 
         h-[2px]
         md:w-[150px] w-[100px]"
-            ></div>
-            <div
-              id="bot-left-line"
-              className="trans-line absolute left-0 
+              ></div>
+              <div
+                id="bot-left-line"
+                className="trans-line absolute left-0 
         -translate-x-[120%] top-[85%] block 
         mx-auto lg:w-[180px] w-[100px] h-[2px] "
-            ></div>
-            <div
-              id="top-right-line"
-              className="trans-line absolute 
+              ></div>
+              <div
+                id="top-right-line"
+                className="trans-line absolute 
           right-0 translate-x-[120%] 
           top-[15%] 
           block 
           mx-auto 
           lg:w-[230px] md:w-[150px] w-[100px]
           h-[2px]"
-            ></div>
-            <div
-              id="bot-right-line"
-              className="trans-line 
+              ></div>
+              <div
+                id="bot-right-line"
+                className="trans-line 
         absolute right-0 
         translate-x-[120%] 
         top-[85%] block 
         mx-auto lg:w-[180px] w-[100px]
         h-[2px]"
-            ></div>
-            <div
-              className="absolute 
+              ></div>
+              <div
+                className="absolute 
           right-0 w-3 h-2 
           translate-x-[600%] 
           -translate-y-1/2 
@@ -81,16 +82,17 @@ export const PlayButton = (props: Props) => {
           bg-vGreen 
           top-1/2 b
           g-vGreen"
-            ></div>
-            <div
-              className="absolute left-0 
+              ></div>
+              <div
+                className="absolute left-0 
           w-3 h-2 
           -translate-x-[600%] 
           -translate-y-1/2 
           bullet-left  
           top-1/2 bg-vGreen"
-            ></div>
-          </button>
+              ></div>
+            </button>
+          </a>
         </div>
       );
     } else {
@@ -99,78 +101,82 @@ export const PlayButton = (props: Props) => {
           className="md:w-full h-[103px] flex 
       justify-center 
       items-center
+      transition-all
+
       "
         >
-          <button
-            className={`bg-[#8C4AED] pl-8 pr-8 pt-3 pb-3 relative 
+          <a href="https://valorant.zing.vn/vi-vn/download/" target="_blank">
+            <button
+              className={`bg-[#8C4AED] pl-8 pr-8 pt-3 pb-3 relative 
           play-button-pb min-w-[230px] md:h-[50px] group 
           ${isHover ? "hover-btn-animation-pb" : ""}`}
-          onMouseEnter={() => {
-            setHover(true);
-          }}
-          onMouseLeave={(element) => {
-            element.currentTarget.classList.remove("hover-animation-pb");
-            setHover(false);
-          }}
-          >
-            <h1
-              className="font-gmv-din-pro-medium font-bold 
-          text-xl button-text-pb relative group-hover:text-[#8C4AED]  "
+              onMouseEnter={() => {
+                setHover(true);
+              }}
+              onMouseLeave={(element) => {
+                element.currentTarget.classList.remove("hover-animation-pb");
+                setHover(false);
+              }}
             >
-              {props.text ? props.text : "KHÁM PHÁ NGAY"}
-            </h1>
+              <h1
+                className="font-gmv-din-pro-medium font-bold 
+          text-xl button-text-pb relative group-hover:text-[#8C4AED]  "
+              >
+                {props.text ? props.text : "KHÁM PHÁ NGAY"}
+              </h1>
 
-            <div
-              id="top-left-line"
-              className="trans-line-pb absolute left-0 
+              <div
+                id="top-left-line"
+                className="trans-line-pb absolute left-0 
         -translate-x-[120%] top-[15%] 
         block mx-auto 
         lg:w-[230px] 
         h-[2px]
         md:w-[150px] w-[100px]"
-            ></div>
-            <div
-              id="bot-left-line"
-              className="trans-line-pb absolute left-0 
+              ></div>
+              <div
+                id="bot-left-line"
+                className="trans-line-pb absolute left-0 
         -translate-x-[120%] top-[85%] block 
         mx-auto lg:w-[180px] w-[100px] h-[2px] "
-            ></div>
-            <div
-              id="top-right-line"
-              className="trans-line-pb absolute 
+              ></div>
+              <div
+                id="top-right-line"
+                className="trans-line-pb absolute 
           right-0 translate-x-[120%] 
           top-[15%] 
           block 
           mx-auto 
           lg:w-[230px] md:w-[150px] w-[100px]
           h-[2px]"
-            ></div>
-            <div
-              id="bot-right-line"
-              className="trans-line-pb 
+              ></div>
+              <div
+                id="bot-right-line"
+                className="trans-line-pb 
         absolute right-0 
         translate-x-[120%] 
         top-[85%] block 
         mx-auto lg:w-[180px] w-[100px]
         h-[2px]"
-            ></div>
-            <div
-              className="absolute 
+              ></div>
+              <div
+                className="absolute 
           right-0 w-3 h-2 
           translate-x-[600%] 
           -translate-y-1/2 
           bullet-right 
           top-1/2 bg-[#8C4AED]"
-            ></div>
-            <div
-              className="absolute left-0 
+              ></div>
+              <div
+                className="absolute left-0 
           w-3 h-2 
           -translate-x-[600%] 
           -translate-y-1/2 
           bullet-left  
           top-1/2 bg-[#8C4AED]"
-            ></div>
-          </button>
+              ></div>
+            </button>
+          </a>
         </div>
       );
     }

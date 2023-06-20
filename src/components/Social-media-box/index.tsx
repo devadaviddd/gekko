@@ -55,7 +55,7 @@ export const SocialMediaBox = (props: Props) => {
         <div
           className={`group flex relative flex-row 
           justify-center items-center 
-    w-[40px] h-[40px] border-white border-[1px] bg-cover
+    w-[40px] h-[40px] border-vGreen border-[1px] bg-cover
           ${isHover ? 'hover-animation' : ''}`}
           onMouseEnter={() => {
             setHover(true);
@@ -66,9 +66,8 @@ export const SocialMediaBox = (props: Props) => {
           }}
         >
           <svg
-            stroke="currentColor"
-            fill="white"
-            strokeWidth="0"
+            stroke="#C9FF46"
+            fill="#C9FF46"
             viewBox={`0 0 ${props.vbWidth} ${props.vbHeight}`}
             height="1em"
             width="1em"
@@ -77,18 +76,18 @@ export const SocialMediaBox = (props: Props) => {
             <path d={props.iconPath}></path>
           </svg>
           <div
-            className="-z-10 block w-[3px] h-[3px] bg-white absolute 
+            className="-z-10 block w-[3px] h-[3px] bg-vGreen absolute 
           top-0 right-0 hover:hidden"
           ></div>
-          <div className="-z-10 block w-[3px] h-[3px] bg-white absolute bottom-0 left-0"></div>
+          <div className="-z-10 block w-[3px] h-[3px] bg-vGreen absolute bottom-0 left-0"></div>
           <div
             className="w-[30%] rotate-45 origin-left border-b-[1px] 
-      border-b-white 
+      border-vGreen
       border-solid absolute top-0 left-0 -z-10"
           ></div>
           <div
             className="w-[30%] rotate-45 origin-right border-b-[1px] 
-      border-b-white 
+      border-vGreen
       border-solid absolute bottom-0 right-0 -z-10"
           ></div>
         </div>

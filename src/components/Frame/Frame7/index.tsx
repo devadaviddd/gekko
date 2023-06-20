@@ -58,7 +58,7 @@ export const Frame7 = () => {
             className="w-[25%] h-full bg-[#8C4AED]  "
             style={{
               clipPath:
-                "polygon(0% 0%, 75.38% 0%, 100% 102%, 100% 100%, 0% 102%)",
+                "polygon(0% 0%, 75.38% 0%, 100% 102%, 100% 100%, 0% 1000%)",
             }}
           ></div>
           <h1
@@ -67,8 +67,12 @@ export const Frame7 = () => {
           underline tracking-wider
           text-[#000]  md:text-2xl text-xl"
           >
-            XEM THÊM TIN TỨC VỀ VALORANT
+            <a href="https://valorant.zing.vn/vi-vn/news/" className=" cursor-pointer"
+              target="_blank">
+              XEM THÊM TIN TỨC VỀ VALORANT
+            </a>
           </h1>
+
           <div
             className="w-[25%] h-full bg-[#8C4AED]"
             style={{
@@ -79,13 +83,14 @@ export const Frame7 = () => {
         </div>
         <div className="w-full h-full bg-[#8C4AED] flex flex-col gap-3 items-center">
           <div
-            className="flex items-end justify-center gap-5 px-3 
-          md:gap-6 lg:scale-100 lg:gap-6 h-[18%] "
+            className="flex items-end   px-3 
+          md:gap-6 lg:scale-100 lg:gap-6 h-[18%]  justify-between "
           >
             <a
               href="https://www.riotgames.com/en"
               target="_blank"
               rel="noopener noreferrer"
+              className="mr-5"
             >
               <svg
                 width="150"

@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full h-[78px] bg-black absolute top-0 z-20 " >
+    <nav className="w-full h-[78px] bg-black absolute top-0 z-20 ">
       <ul className="w-full h-full flex items-center ">
         <li>
           <a
@@ -90,14 +90,15 @@ export const Navbar = () => {
             after:content-[''] 
             after:w-1 after:h-1 after:bg-[#111111] 
             after:absolute after:bottom-0 after:right-0 
-            transition-all shrink-0 red-gradient hover:opacity-75
+            shrink-0 red-gradient hover:opacity-75
             mr-[2rem] hidden"
             rel="noreferrer"
           >
             <button className="uppercase">Chơi ngay</button>
           </a>
           <div
-            className="p-2 text-3xl text-white lg:hidden transition-all bg-[#808080] bg-opacity-20 rounded-md z-20"
+            className="p-2 text-3xl text-white navBreak:hidden transition-all
+             bg-[#808080] bg-opacity-20 rounded-md z-20"
             onClick={() => {
               setToggle(!toggle);
             }}
@@ -117,13 +118,10 @@ export const Navbar = () => {
                     <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path>
                   </svg>
                 </div>
-                <NavProvider>
-                  <MobileNav />
-                </NavProvider>
               </>
             ) : (
               <>
-                <div >
+                <div>
                   <svg
                     stroke="currentColor"
                     fill="none"
@@ -143,6 +141,9 @@ export const Navbar = () => {
                 </div>
               </>
             )}
+            <NavProvider>
+              <MobileNav isOpen={toggle} />
+            </NavProvider>
           </div>
         </li>
       </ul>
