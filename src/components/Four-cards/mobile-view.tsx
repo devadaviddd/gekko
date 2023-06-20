@@ -238,7 +238,7 @@ export const FourCardsMobileView = () => {
               
             bg-[#7A44E6] 
             rounded-xl text-center font-gmv-din-pro-medium border-2 border-[#C9FF46]
-            mt-0 text-xs xl:text-base "
+            mt-0 text-xs xl:text-base hover:opacity-75 "
                 >
                   TÌM HIỂU NGAY
                 </button>
