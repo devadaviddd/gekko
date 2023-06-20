@@ -1,6 +1,5 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { useNavContext } from "@/hooks/nav-context";
-import { useScrollBlock } from "@/hooks/scroll";
 import { useIsomorphicLayoutEffect } from "@/hooks/useIsomorphicLayout";
 import { gsap } from "gsap";
 
