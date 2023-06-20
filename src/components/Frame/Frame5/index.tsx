@@ -75,7 +75,7 @@ export const Frame5 = () => {
     return (
       hasPrev && (
         <button
-          className="lg:hover:scale-125 lg:transition-all absolute z-50 
+          className="lg:hover:scale-125 lg:transition-all absolute z-10 
         -translate-y-1/2 left-4 top-1/2 w-50 h-50"
           onClick={clickHandler}
         >
